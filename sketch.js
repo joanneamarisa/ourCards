@@ -32,11 +32,11 @@ function setup() {
 
   nextButton = createButton("NEXT QUESTION");
   nextButton.position(width /2-15, height - 150);
-  nextButton.style("font-size", "24px");
+  nextButton.style("font-size", "30px");
   nextButton.mousePressed(goNext);
   aButton = createButton("FLIP CARD");
   aButton.position(width / 6-15, height - 150);
-  aButton.style("font-size", "24px");
+  aButton.style("font-size", "30px");
   aButton.mousePressed(flipCard);
 
   rectMode(CENTER);
