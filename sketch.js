@@ -48,8 +48,7 @@ function setup() {
   textFont(font);
   text("Relationship flash cards!", width / 2, 100);
   textSize(33);
-  text("Calvin and Joanne, June 2024", width / 2, 150);
-  text("One year anniversary!", width/2, 180);
+  text("Calvin and Joanne, June 2024 (first year anniversary)", width / 2, 150);
   textSize(21);
   text(
     "*Click on buttons to flip cards and reveal answer, or proceed to next question",
