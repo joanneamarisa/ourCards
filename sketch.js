@@ -9,19 +9,19 @@ var click = false;
 var nextButton, aButton;
 let j = 0;
 let photo1, photo2;
-let cnv;
+let font;
 
 function preload() {
   table = loadTable("jo-calvin.csv", "csv", "header");
   photo1 = loadImage("jcfc-01.png");
   photo2 = loadImage("jcfc-02.png");
+  font = loadFont("New Kansas Light.otf");
 }
 
 function setup() {
   cnv = createCanvas(1080, 1800);
   background("beige");
   rows = table.getRowCount();
-  cnv
 
   for (let i = 0; i < 100; i++) {
     Q = int(random(0, rows));
@@ -45,7 +45,7 @@ function setup() {
   textAlign(CENTER);
   fill("blue");
   textSize(45);
-  textFont("new kansas");
+  textFont(font);
   text("Relationship flash cards!", width / 2, 100);
   textSize(24);
   text("Calvin and Joanne, June 2024 (first year anniversary)", width / 2, 130);
