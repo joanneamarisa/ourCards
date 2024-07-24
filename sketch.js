@@ -19,7 +19,7 @@ function preload() {
 }
 
 function setup() {
-  cnv = createCanvas(1080, 1800);
+  cnv = createCanvas(windowWidth, windowHeight);
   background("beige");
   rows = table.getRowCount();
 
