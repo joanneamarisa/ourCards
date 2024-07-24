@@ -44,12 +44,13 @@ function setup() {
   //TITLE
   textAlign(CENTER);
   fill("blue");
-  textSize(45);
+  textSize(48);
   textFont(font);
   text("Relationship flash cards!", width / 2, 100);
-  textSize(24);
-  text("Calvin and Joanne, June 2024 (first year anniversary)", width / 2, 130);
-  textSize(18);
+  textSize(33);
+  text("Calvin and Joanne, June 2024", width / 2, 150);
+  text("One year anniversary!", width/2, 180);
+  textSize(21);
   text(
     "*Click on buttons to flip cards and reveal answer, or proceed to next question",
     width / 2,
@@ -82,8 +83,8 @@ function draw() {
     textOnCard = qs;
   }
 
-  textSize(27);
-  fill(50);
+  textSize(42);
+  fill(15);
   text(textOnCard, width / 2, height / 2 - 20, (width * 3) / 4);
 
   // STICKERS
