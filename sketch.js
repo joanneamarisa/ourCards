@@ -9,6 +9,7 @@ var click = false;
 var nextButton, aButton;
 let j = 0;
 let photo1, photo2;
+let cnv;
 
 function preload() {
   table = loadTable("jo-calvin.csv", "csv", "header");
@@ -17,9 +18,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(480, 750);
+  cnv = createCanvas(1080, 1800);
   background("beige");
   rows = table.getRowCount();
+  cnv
 
   for (let i = 0; i < 100; i++) {
     Q = int(random(0, rows));
@@ -42,12 +44,12 @@ function setup() {
   //TITLE
   textAlign(CENTER);
   fill("blue");
-  textSize(36);
+  textSize(45);
   textFont("new kansas");
   text("Relationship flash cards!", width / 2, 100);
-  textSize(15);
+  textSize(24);
   text("Calvin and Joanne, June 2024 (first year anniversary)", width / 2, 130);
-  textSize(12);
+  textSize(18);
   text(
     "*Click on buttons to flip cards and reveal answer, or proceed to next question",
     width / 2,
@@ -80,7 +82,7 @@ function draw() {
     textOnCard = qs;
   }
 
-  textSize(21);
+  textSize(27);
   fill(50);
   text(textOnCard, width / 2, height / 2 - 20, (width * 3) / 4);
 
